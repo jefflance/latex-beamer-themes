@@ -6,14 +6,14 @@
 \vskip1cm%
   \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
   \begin{tikzpicture}
-  \useasboundingbox[fill={rgb,255: red,247; green,248; blue,250}](0,0) rectangle(\the\paperwidth,1.2);
-  \fill[color={rgb,255:red,37; green,20; blue,42}] (0,0) rectangle(2.95,1.2);
-  \fill[color={rgb,255:red,218; green,219; blue,214}] (3.05,0) rectangle(\the\paperwidth,1.2);
+  \useasboundingbox[fill=mywhite](0,0) rectangle(\the\paperwidth,1.2);
+  \fill[color=mygrey1] (0,0) rectangle(2.95,1.2);
+  \fill[color=mypurple1] (3.05,0) rectangle(\the\paperwidth,1.2);
    \ifx\insertframesubtitle\@empty%
-      {\node[anchor=west, color={rgb,255:red,23; green,33; blue,42}, font=\large] at (3.2,0.61){\insertframetitle};}
+      {\node[anchor=west, color=mywhite, font=\large] at (3.2,0.61){\insertframetitle};}
       \else%
-      {\node[anchor= west, color={rgb,255:red,23; green,33; blue,42}, font=\large] at (3.2,0.81){\insertframetitle};%
-       \node[anchor= west, color={rgb,255:red,23; green,33; blue,42}, font=\small] at (3.2,0.41){\insertframesubtitle};}%
+      {\node[anchor= west, color=mywhite, font=\large] at (3.2,0.81){\insertframetitle};%
+       \node[anchor= west, color=mywhite, font=\small] at (3.2,0.41){\insertframesubtitle};}%
       \fi
   \end{tikzpicture}
   \end{beamercolorbox}
