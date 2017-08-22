@@ -1,12 +1,50 @@
 \mode<presentation>
 
-% {rgb,255: red,247; green,248; blue,250}}
+% Define some custom colors
+% white: rgba(247, 248, 250, 1.0)
+\definecolor{mywhite}{HTML}{f7f8fa}
+% black: rgba(23, 33, 42, 1.0)
+\definecolor{myblack}{HTML}{17212a}
+% red: rgba(188, 7, 68, 1.0)
+\definecolor{myred}{HTML}{CF084B}
+% grey: rgba(218, 219, 214, 1.0)
+\definecolor{mygrey}{HTML}{E4E5E0}
+% blue:
+\definecolor{myblue}{HTML}{385167}
+% purple: rgba(37, 20, 42, 1.0)
+\definecolor{mypurple}{HTML}{5B3167}
+% green: rgba(49, 103, 91, 1.0)
+\definecolor{mygreen}{HTML}{07BC7F}
+% yellow: rgba(245, 166, 9, 1.0)
+\definecolor{myellow}{HTML}{F5A609}
+
+% Define alternatives colors
+% red1
+\definecolor{myred1}{HTML}{BC0744}
+% grey1
+\definecolor{mygrey1}{HTML}{DADBD6}
+% purple1
+\definecolor{mypurple1}{HTML}{25142A}
+% green1
+\definecolor{mygreen1}{HTML}{05865B}
+% yellow1
+\definecolor{myyellow1}{HTML}{AF7607}
+
 
 % Settings
-\setbeamercolor*{title page header}{fg={rgb,255: red,247; green,248; blue,250}}
-\setbeamercolor*{author}{fg={rgb,255: red,23; green,33; blue,42}}
-\setbeamercolor*{date}{fg={rgb,255: red,23; green,33; blue,42}}
-\setbeamercolor*{item}{fg={rgb,255: red,188; green,7; blue,68}}
+%\setbeamercolor*{author}{fg=AkatsukiBlack}
+%\setbeamercolor*{date}{fg=AkatsukiBlack}
+%\setbeamercolor*{item}{fg=AkatsukiRed}
+%\setbeamercolor*{enumerate item}{fg=AkatsukiBlack}
+%\setbeamercolor{section in toc}{fg=AkatsukiRed}
+%\setbeamercolor{subsection in toc}{fg=AkatsukiBlack1}
+\setbeamercolor{structure}{fg=AkatsukiPurple} % itemize, enumerate, etc
+\setbeamercolor*{palette primary}{use=structure,bg=AkatsukiBlack,fg=AkatsukiWhite}
+\setbeamercolor*{palette secondary}{use=structure,bg=AkatsukiBlack,fg=AkatsukiWhite}
+\setbeamercolor*{palette tertiary}{use=structure,bg=AkatsukiBlack,fg=AkatsukiWhite}
+\setbeamercolor*{palette quaternary}{use=structure,bg=AkatsukiBlack,fg=AkatsukiWhite}
+
+\setbeamercolor*{title page header}{fg=AkatsukiWhite}
 
 \mode
 <all>
