@@ -1,50 +1,72 @@
 \mode<presentation>
 
-% Define some custom colors
+%
+%
+% Define custom colors
+%
+%
+
 % white: rgba(247, 248, 250, 1.0)
-\definecolor{mywhite}{HTML}{f7f8fa}
+\definecolor{color0}{HTML}{f7f8fa}
 % black: rgba(23, 33, 42, 1.0)
-\definecolor{myblack}{HTML}{17212a}
-% red: rgba(188, 7, 68, 1.0)
-\definecolor{myred}{HTML}{CF084B}
+\definecolor{color1}{HTML}{17212a}
 % grey: rgba(218, 219, 214, 1.0)
-\definecolor{mygrey}{HTML}{E4E5E0}
+\definecolor{color2}{HTML}{E4E5E0}
+% red: rgba(188, 7, 68, 1.0)
+\definecolor{color3}{HTML}{CF084B}
 % blue:
-\definecolor{myblue}{HTML}{385167}
-% purple: rgba(37, 20, 42, 1.0)
-\definecolor{mypurple}{HTML}{5B3167}
+\definecolor{color4}{HTML}{385167}
+% violet: rgba(37, 20, 42, 1.0)
+\definecolor{color5}{HTML}{5B3167}
 % green: rgba(49, 103, 91, 1.0)
-\definecolor{mygreen}{HTML}{07BC7F}
+\definecolor{color6}{HTML}{07BC7F}
 % yellow: rgba(245, 166, 9, 1.0)
-\definecolor{myellow}{HTML}{F5A609}
+\definecolor{color7}{HTML}{F5A609}
 
+
+
+%
+%
 % Define alternatives colors
-% red1
-\definecolor{myred1}{HTML}{BC0744}
+%
+%
+
 % grey1
-\definecolor{mygrey1}{HTML}{DADBD6}
+\definecolor{color21}{HTML}{DADBD6}
+% red1
+\definecolor{color31}{HTML}{BC0744}
 % purple1
-\definecolor{mypurple1}{HTML}{25142A}
+\definecolor{color51}{HTML}{25142A}
 % green1
-\definecolor{mygreen1}{HTML}{05865B}
+\definecolor{color61}{HTML}{05865B}
 % yellow1
-\definecolor{myyellow1}{HTML}{AF7607}
+\definecolor{color71}{HTML}{AF7607}
 
 
-% Settings
-%\setbeamercolor*{author}{fg=AkatsukiBlack}
-%\setbeamercolor*{date}{fg=myblack}
-%\setbeamercolor*{item}{fg=AkatsukiRed}
-%\setbeamercolor*{enumerate item}{fg=myblack}
-%\setbeamercolor{section in toc}{fg=AkatsukiRed}
-%\setbeamercolor{subsection in toc}{fg=myblack1}
-\setbeamercolor{structure}{fg=mypurple1} % itemize, enumerate, etc
-\setbeamercolor*{palette primary}{use=structure,bg=myblack,fg=mywhite}
-\setbeamercolor*{palette secondary}{use=structure,bg=myblack,fg=mywhite}
-\setbeamercolor*{palette tertiary}{use=structure,bg=myblack,fg=mywhite}
-\setbeamercolor*{palette quaternary}{use=structure,bg=myblack,fg=mywhite}
 
-\setbeamercolor*{title page header}{fg=mywhite}
+%
+%
+% Sets the colors
+%
+%
+
+% Main colors displayed on frames
+\colorlet{main0}{color21}
+\colorlet{main1}{color31}
+\colorlet{main2}{color51}
+
+% Colors used in the cours_beamer class
+\colorlet{sectioncolor}{color71}
+\colorlet{subsectioncolor}{color71}
+
+% Colors of the structure, palettes, etc
+\setbeamercolor*{structure}{fg=color51} % itemize, enumerate, etc
+\setbeamercolor*{palette primary}{use=structure,bg=color1,fg=color0}
+\setbeamercolor*{palette secondary}{use=structure,bg=color1,fg=color0}
+\setbeamercolor*{palette tertiary}{use=structure,bg=color1,fg=color0}
+\setbeamercolor*{palette quaternary}{use=structure,bg=color1,fg=color0}
+
+\setbeamercolor*{title page header}{fg=color0}
 
 \mode
 <all>
