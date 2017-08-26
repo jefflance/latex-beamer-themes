@@ -6,14 +6,14 @@
 \vskip1cm%
   \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
   \begin{tikzpicture}
-  \useasboundingbox[fill=mywhite](0,0) rectangle(\the\paperwidth,1.2);
-  \fill[color=mygrey1] (0,0) rectangle(2.95,1.2);
-  \fill[color=mypurple1] (3.05,0) rectangle(\the\paperwidth,1.2);
+  \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);
+  \fill[color=main0] (0,0) rectangle(2.95,1.2);
+  \fill[color=main2] (3.05,0) rectangle(\the\paperwidth,1.2);
    \ifx\insertframesubtitle\@empty%
-      {\node[anchor=west, color=mywhite, font=\large] at (3.2,0.61){\insertframetitle};}
+      {\node[anchor=west, color=white, font=\large] at (3.2,0.61){\insertframetitle};}
       \else%
-      {\node[anchor= west, color=mywhite, font=\large] at (3.2,0.81){\insertframetitle};%
-       \node[anchor= west, color=mywhite, font=\small] at (3.2,0.41){\insertframesubtitle};}%
+      {\node[anchor= west, color=white, font=\large] at (3.2,0.81){\insertframetitle};%
+       \node[anchor= west, color=white, font=\small] at (3.2,0.41){\insertframesubtitle};}%
       \fi
   \end{tikzpicture}
   \end{beamercolorbox}

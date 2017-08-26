@@ -1,18 +1,19 @@
 \mode<presentation>
 
+% Background of frames
 \setbeamertemplate{background}{
   \begin{tikzpicture}
   \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-  \fill[color=mypurple1] (0,2) rectangle (\the\paperwidth,\the\paperheight);
-  \fill[color=myred1] (0,0) rectangle(2.95,1.9);
-  \fill[color=mygrey1] (3.05,0) rectangle(\the\paperwidth,1.9);
+  \fill[color=main2] (0,2) rectangle (\the\paperwidth,\the\paperheight);
+  \fill[color=main1] (0,0) rectangle(2.95,1.9);
+  \fill[color=main0] (3.05,0) rectangle(\the\paperwidth,1.9);
   \ifnum\thepage>1\relax%
    \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
    \fi
   \end{tikzpicture}
 }
 
-% Title page
+% Title page of frames
 \defbeamertemplate*{title page}{Akatsuki}[1][]
 { 
    \vskip6cm%
@@ -30,6 +31,6 @@
   \vfill
 }
 
-% Items
-\setbeamertemplate{items}[square]
-\setbeamertemplate{sections/subsections in toc}[square]
+% Items in frames
+\setbeamertemplate{items}[bullets]
+\setbeamertemplate{sections/subsections in toc}[bullets]
