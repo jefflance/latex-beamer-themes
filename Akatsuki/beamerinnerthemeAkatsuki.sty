@@ -1,6 +1,11 @@
 \mode<presentation>
 
-% Background of frames
+%
+%
+% Frames backgrounds
+%
+%
+
 \setbeamertemplate{background}{
   \begin{tikzpicture}
   \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
@@ -13,7 +18,14 @@
   \end{tikzpicture}
 }
 
-% Title page of frames
+
+
+%
+%
+% Title page frame
+%
+%
+
 \defbeamertemplate*{title page}{Akatsuki}[1][]
 { 
    \vskip6cm%
@@ -31,6 +43,16 @@
   \vfill
 }
 
-% Items in frames
+
+
+%
+%
+% Item symbol in frames
+%
+%
+
+% All frames
 \setbeamertemplate{items}[bullets]
-\setbeamertemplate{sections/subsections in toc}[bullets]
+
+% in ToC
+\setbeamertemplate{subsection in toc}[subsections numbered arabic]
