@@ -55,12 +55,21 @@
 \colorlet{main1}{color31}
 \colorlet{main2}{color51}
 
+% Redefine some standard colors
+\colorlet{red}{main1}
+
 % Colors of the structure, palettes, etc
 \setbeamercolor*{structure}{fg=color51} % itemize, enumerate, etc
 \setbeamercolor*{palette primary}{use=structure,fg=color1,bg=color0}
 \setbeamercolor*{palette secondary}{use=structure,fg=color1,bg=color0}
 \setbeamercolor*{palette tertiary}{use=structure,fg=color1,bg=color0}
 \setbeamercolor*{palette quaternary}{use=structure,fg=color1,bg=color0}
+
+% Colors of head/foot line
+\setbeamercolor*{author in head/foot}{bg=white}
+\setbeamercolor*{title in head/foot}{bg=white}
+\setbeamercolor*{page number in head/foot}{bg=white}
+\setbeamercolor*{upper separation line foot}{bg=main1}
 
 % Color of the title page frame
 \setbeamercolor*{title page header}{fg=color0}

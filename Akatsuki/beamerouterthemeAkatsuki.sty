@@ -1,9 +1,14 @@
 \mode<presentation>
 
+%
+%
 % Frame title
+%
+%
+
 \defbeamertemplate*{frametitle}{Akatsuki}[1][]
 {
-\vskip1cm%
+  % \vskip1cm%
   \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
   \begin{tikzpicture}
   \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);
@@ -19,4 +24,37 @@
   \end{beamercolorbox}
 }
 
+
+
+%
+%
+% Foot line
+%
+%
+
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1pt,dp=1ex,center]{upper separation line foot}
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=1em,dp=1ex,center]{} %{author in head/foot}
+    \usebeamerfont{author in head/foot}
+    \hspace*{4mm}
+    \insertdate
+    \hspace{4mm}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=1em,dp=1ex,center]{} %{title in head/foot}
+    \usebeamerfont{title in head/foot}
+    \hspace*{4mm}
+    \insertshorttitle
+    \hspace{4mm}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=1em,dp=1ex,center]{} %{page number in head/foot}
+    \usebeamerfont{page number in head/foot}
+    \hspace*{4mm}
+    \insertframenumber{} / \inserttotalframenumber
+    \hspace{4mm}
+  \end{beamercolorbox}
+  \vspace*{.1cm}
+}
+ 
 \mode<all>
