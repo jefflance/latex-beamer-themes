@@ -28,24 +28,33 @@
 
 \defbeamertemplate*{title page}{Akatsuki}[1][]
 { 
+	\vbox to 0pt{
   \vskip1cm%
-  % \begin{beamercolorbox}[wd=12cm,center]{}
-  \begin{beamercolorbox}[wd=12cm,leftskip=1cm,sep=8pt,#1]{title page header}
-    \usebeamerfont{title}\inserttitle\par%
+  \begin{beamercolorbox}[wd=12cm,center,sep=8pt,#1]{title page header}
+  		\usebeamerfont{title}\inserttitle\par%
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=12cm,leftskip=3cm,sep=8pt,#1]{title page header}
-    % \usebeamerfont{title}
-    {\small \insertsubtitle}\par%
+  }
+  
+  \vbox to 0pt{
+  \vskip5.1cm%
+  \begin{beamercolorbox}[wd=12cm,leftskip=3cm,sep=8pt,#1]{subtitle page header}
+  		{\small \insertsubtitle}\par%
   \end{beamercolorbox}%
-  % \end{beamercolorbox}
-  \vskip4.75cm%
-  \begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{author}
+  }
+
+	\vbox to 0pt {
+	\vskip4.9cm%
+  \begin{beamercolorbox}[wd=12cm,leftskip=0cm,#1]{author}  	
     \usebeamerfont{author}\insertauthor%
   \end{beamercolorbox}
-   \vskip0.2cm%
-  \begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{date}
-    \usebeamerfont{author}\insertdate%
+  }
+
+	\vbox to 0pt{
+	\vskip5.15cm%
+  \begin{beamercolorbox}[wd=12cm,leftskip=0cm,#1]{date}
+    	\usebeamerfont{author}\insertdate%
   \end{beamercolorbox}
+  }
   \vfill
 }
 
